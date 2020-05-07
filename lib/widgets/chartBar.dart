@@ -24,7 +24,7 @@ class ChartBar extends StatelessWidget {
               Container(
                 decoration: BoxDecoration(
                   color: Colors.white70,
-                  border: Border.all(color: Colors.white),
+                  border: Border.all(color: Colors.black),
                   borderRadius: BorderRadius.circular(5.0),
                 ),
               ),
@@ -32,7 +32,7 @@ class ChartBar extends StatelessWidget {
                 heightFactor: percentSpent,
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Colors.yellow,
+                    color: Colors.blue[900],
                     borderRadius: BorderRadius.circular(5.0),
                   ),
 
@@ -44,7 +44,7 @@ class ChartBar extends StatelessWidget {
         SizedBox(
           height: 4.0,
         ),
-        Text(amount.toStringAsFixed(2)),
+        Text('₹'+amount.toStringAsFixed(2)),
       ],
     );
   }

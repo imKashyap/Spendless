@@ -43,7 +43,8 @@ class _NewTransactionState extends State<NewTransaction> {
           crossAxisAlignment: CrossAxisAlignment.end,
           children: <Widget>[
             TextField(
-              decoration: InputDecoration(labelText: 'Title'),
+              decoration: InputDecoration(
+                  labelText: 'Title'),
               controller: titleController,
               onSubmitted: (_) => submitData(),
             ),
