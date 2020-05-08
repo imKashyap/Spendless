@@ -44,7 +44,7 @@ class ChartBar extends StatelessWidget {
         SizedBox(
           height: 4.0,
         ),
-        Text('₹'+amount.toStringAsFixed(2)),
+        Text('₹'+amount.toStringAsFixed(0)),
       ],
     );
   }

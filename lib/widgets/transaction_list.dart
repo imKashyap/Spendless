@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import '../models/transaction.dart';
@@ -11,10 +12,16 @@ class TransactionList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 300,
-      child: transactions.isEmpty?Container(
-        child: Image.asset('assets/images/waiting.png',
-        color: Colors.grey,
-        fit: BoxFit.fill,),
+      child: transactions.isEmpty?Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Text('No Transactions added yet!'),
+//          Container(
+//            child: Image.asset('assets/images/waiting.png',
+//            color: Colors.grey,
+//            fit: BoxFit.fill,),
+//          ),
+        ],
       )
           : ListView.builder(
         itemBuilder: (ctx, index) {
